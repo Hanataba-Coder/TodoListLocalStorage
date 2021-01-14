@@ -29,7 +29,8 @@ export const SettingIcon = styled.span`
 `;
 
 export const ListInput = styled(TextareaAutosize)`
-  padding-top: 7px;
+  font-size: 1.85vh;
+  padding-top: 5px;
   resize: none;
   outline: none;
   border: none;

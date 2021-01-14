@@ -163,7 +163,7 @@ export const TopOption = styled.div`
 
 export const TitleWrapper = styled.div`
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2.5vh;
 `;
 
 export const ListInput = styled.input`
@@ -183,7 +183,8 @@ export const ListInputWrap = styled.li`
 `;
 
 export const AddListInput = styled(TextareaAutosize)`
-  padding-top: 7px;
+  font-size: 1.85vh;
+  padding-top: 5px;
   resize: none;
   outline: none;
   border: none;
@@ -195,6 +196,7 @@ export const AddListInput = styled(TextareaAutosize)`
 `;
 
 export const ListInputSearch = styled.input`
+  font-size: 1.85vh;
   outline: none;
   border: none;
   width: 100%;
@@ -215,8 +217,9 @@ export const FlexRow = styled.div`
 export const NavigatorWrap = styled.div`
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 60px;
   font-weight: bold;
+  font-size: 2vh;
 
   & a {
     text-decoration: none;
@@ -231,5 +234,9 @@ export const NavigatorWrap = styled.div`
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  @media only screen and (max-width: 600px) {
+    right: 20px;
   }
 `;
