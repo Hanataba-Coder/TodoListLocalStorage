@@ -8,9 +8,13 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route exact path="/" component={TodoListScreen} />
-        <Route exact path="/history" component={HistoryScreen} />
-        <Redirect to="/" />
+        <Route exact path="/TodoListLocalStorage/" component={TodoListScreen} />
+        <Route
+          exact
+          path="/TodoListLocalStorage/history"
+          component={HistoryScreen}
+        />
+        <Redirect to="/TodoListLocalStorage/" />
       </Switch>
     </div>
   );

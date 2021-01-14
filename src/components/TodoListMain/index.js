@@ -68,7 +68,7 @@ const TodoListMain = () => {
     <TodoListContainer>
       <TodoListWrapper>
         <NavigatorWrap>
-          <Link to="/history">History</Link>
+          <Link to="/TodoListLocalStorage/history">History</Link>
         </NavigatorWrap>
         <TopOption>
           <FlexRow>

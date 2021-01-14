@@ -8,20 +8,12 @@ import {
   SaveBtn,
   CancelBtn,
 } from './styled';
-import {
-  EDIT_TODO,
-  TOGGLE_TODO,
-  ADD_HISTORY,
-  DELETE_TODO,
-} from '../../../../redux/todolist/type';
-import { useDispatch, useSelector } from 'react-redux';
 import moment from 'moment';
 
 const ListTodo = ({ TodoList, trigger }) => {
   const HistoryList = JSON.parse(localStorage.getItem('history'));
   const [Text, setText] = useState('');
   const [Edit, setEdit] = useState('');
-  const dispatch = useDispatch();
 
   useEffect(() => {
     setEdit('');
